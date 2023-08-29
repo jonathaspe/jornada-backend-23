@@ -1,4 +1,4 @@
-Backend REST API
+# Backend REST API
 
 Projeto para a criação de uma API REST e de um banco de dados com MongoDB
 
@@ -27,8 +27,16 @@ DELETE -> Remover informações já existentes
 
 Também posso enviar um corpo da requisição
 
-Toda requisição possui duas coisas: URL HEADER BODY
+Toda requisição possui: 
+- URL 
+- HEADER 
+- BODY
 
-[POST] http://localhost:3000/mensagem Body: {"nome": "Mulher Maravilha"}
+Exemplo do JSON body enviado na requisição de POST:
+[POST] http://localhost:3000/mensagem 
+Body: 
+{
+    nome": "Mulher Maravilha"
+}
 
 JSON -> JavaScript Object Notation
