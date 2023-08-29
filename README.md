@@ -12,31 +12,32 @@ URI: http://localhost:3000/herois
 
 Rota ou Endpoint: /herois
 
-Todas as requisições possuem VERBOS
-
-REST: Verbos específicos para as requisições RESTful: Uma aplicação (API) capaz de se comunicar com verbos REST
+## Todas as requisições possuem VERBOS
+- REST: Verbos específicos para as requisições
+- RESTful: Uma aplicação (API) capaz de se comunicar com verbos REST
 
 [GET] http://localhost:3000/herois
 [POST] http://localhost:3000/herois
 
-Foram criados endpoints com os principais métodos (CRUD):
-GET -> Obter informações 
-POST -> Criar informações novas 
-PUT -> Atualizar informações já existentes 
-DELETE -> Remover informações já existentes
+## Foram criados endpoints com os principais métodos (CRUD):
+- GET -> Obter informações 
+- POST -> Criar informações novas 
+- PUT -> Atualizar informações já existentes 
+- DELETE -> Remover informações já existentes
 
-Também posso enviar um corpo da requisição
-
-Toda requisição possui: 
+## Toda requisição possui: 
 - URL 
 - HEADER 
 - BODY
 
+## Também é possível enviar um corpo da requisição
+
 Exemplo do JSON body enviado na requisição de POST:
-[POST] http://localhost:3000/mensagem 
+[POST] http://localhost:3000/mensagem
+
 Body: 
-{
+`{
     nome": "Mulher Maravilha"
-}
+}`
 
 JSON -> JavaScript Object Notation
