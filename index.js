@@ -46,6 +46,12 @@ app.get("/oi", (req, res) => {
   //Pegamos a informação da lista
   const item = lista[id];
 
+  if (!item){
+    res.send("Heroi não encontrado.");
+
+    return;
+  }
+
   //Exibir o item na resposta do endpoint
   res.send(item);
 });
