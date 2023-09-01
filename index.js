@@ -1,4 +1,12 @@
 const express = require("express");
+const { MongoClient } = require("mongodb");
+
+const url = "mongodb://localhost:27017";
+const db = "jonathaspe";
+const client = new MongoClient(url);
+
+async function main(){
+
 const app = express();
 
 const port = 3000;
@@ -87,3 +95,6 @@ app.delete("/herois/:id", function (req, res) {
 app.listen(port, () => {
   console.info(`App rodando em localhost:${port}`);
 });
+}
+
+main();
